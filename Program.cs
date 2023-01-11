@@ -1,4 +1,9 @@
-﻿
+﻿string password = "";
+do
+{
+  System.Console.WriteLine("Enter password: ");
+  password = Console.ReadLine();
+}while(password != "qwerty");
 System.Console.WriteLine("Assalomu alaykum xush kelibsiz, Ismingizni kiring: ");
 string name = System.Console.ReadLine();
 
