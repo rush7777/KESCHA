@@ -14,22 +14,27 @@ int age = Convert.ToInt32(Console.ReadLine());
 int keschasAge = 3;
 int ageDiff = age - keschasAge;
 
-if(ageDiff > 0){
+if(ageDiff > 0)
+{
   System.Console.WriteLine($"Sizning va mening yoshimiz orasidagi tafovut bor ekan va men sizdan {ageDiff} yoshga kichik ekan man");
 }
-else if(ageDiff == 0){
+else if(ageDiff == 0)
+{
   System.Console.WriteLine($"Biz tengqurlar ekanmiz :)");
 }
-else {
+else
+{
   System.Console.WriteLine($"Sening va mening yoshimiz orasidagi tafovut bor ekan va men sendan {Math.Abs(ageDiff)} yoshga kattaman");
 }
 
 string[] friendsName = {"Anvar" , "Bahodir", "Kamola"};
 int[] friendsAge = {5 , 8 , 4};
+foreach(string friendName in friendsName)
+{
+  System.Console.WriteLine($"Hello {friendName} How are you?");
+}
+for (int iteration = 0; iteration < friendsName.Length; iteration++)
+{
+  System.Console.WriteLine($"{friendsName[iteration]} is {friendsAge[iteration] } years old.");
 
-System.Console.WriteLine($"{friendsName[0]} is {friendsAge[0] } years old.");
-System.Console.WriteLine($"{friendsName[1]} is {friendsAge[1] } years old.");
-System.Console.WriteLine($"{friendsName[2]} is {friendsAge[2] } years old.");
-System.Console.WriteLine($"Enter {friendsName[2]}`s age:");
-friendsAge[2] = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine($"{friendsName[2]} is {friendsAge[2]} years old");
+}
